@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap')
+
+*,*::before,*::after{
+    box-sizing:border-box;
+}
+:root{
+    --dark-blue:#35009f;
+    --less-dark-blue:#473ca9;
+    --light-blue:#89e0d4;
+}
+*{margin:0;}
+
+nav a{
+    text-decoration:none;
+    color:rgb(255,0,0);
+}
+
+nav a:hover{
+    color:var(--dark-blue);
+    text-decoration:underline overline;
+}
+
+.flex-wrapper{
+    display:flex;
+      flex-direction:row;
+      gap:1rem;
+      background-color:#f0fa74;
+      padding:2vh;
+      justify-content:space-around;
+      align-items:center;
+  }
+
+  .footer-box{
+      display:flex;
+      flex-direction:row;
+      gap:1rem;
+      background-color:#E97132;
+      padding:12vh;
+      justify-content:space-around;
+      position:absolute;
+      bottom:0;
+      left:0;
+      right:0;
+      z-index:5;
+      font-size:1.5px;
+  }
+
+  .footer-box a{
+    align-items:center;
+    text-decoration:none;
+    color:#000000;
+  }
+
+  .footer-box a:hover{
+    font-size:0.5vw;
+    color:rgb(255,0,0);
+  }
+
+.item{
+    font-size:4vh;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.itemIndex{
+    color:var(--less-dark-blue);
+    font-size:6vh;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.itemMenu{
+    color:var(--less-dark-blue);
+    font-size:6vh;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.itemAbout{
+    color:var(--less-dark-blue);
+    font-size:6vh;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color:var(--light-blue);
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23f0fa74' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.about-body{
+    background-color:var(--light-blue);
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23f0fa74' fill-opacity='0.5' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.about-image{
+    float:left;
+    width:48vw;
+    height:100vh;
+}
+
+.about-text{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style:normal;
+    font-size:2.3vw;
+    text-align:right;
+    color:var(--dark-blue);
+    justify-self:end;
+}
+
+.picture{
+    flex-basis:200px;
+    flex-grow:1;
+    align-items:center;
+}
+
+h2{
+    font-size:5vh;
+    color:var(--dark-blue);
+    font-family:"Nerko One";
+    text-align:center;
+}
+
+.home-page-images{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.logo-img{
+    display:block;
+    max-width:100%;
+    margin:0 auto;
+}
+
+.knife-picture1{
+    width:80%;
+    padding-top:30vh;
+    transform:scaleX(-1);
+    display:block;
+    max-width:100%;
+    margin:auto 0;
+    min-width:30%;
+}
+
+.knife-picture2{
+    padding-top:20vh;
+    display:block;
+    max-width:100%;
+    margin:auto 0;
+    min-width:30%;
+}
+
+hr{
+    height:2px;
+    border-color:rgb(255,0,0);
+    background-color:rgb(255,0,0);
+}
+
+.menu-items{
+    padding-top:6vh;
+    display:flex;
+    gap:2rem;
+    justify-content:space-between;
+}
+
+.menu-item-card{
+    width:40vw;
+    border:0.2vw dotted red;
+    padding:0.5vw;
+    border-radius:0.5vw;
+    background-color:#f0fa74;
+    color:rgb(255,0,0);
+    margin:1vw;
+    font-size:1vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.menu-image{
+    align-self:center;
+    width:20vw;
+    height:32vh;
+    max-height:50vh;
+}
+
+.menu-item-card h3{
+    margin:auto;
+}
+
+.menu-name{
+    align-items:baseline;
+
+}
